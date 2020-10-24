@@ -26,7 +26,7 @@ type WeatherTypeSys = {
 
 type WeatherTypeWeather = {
   id: number
-  main: string
+  main: string | number
   description: string | number
   icon: string | number
 }
@@ -44,10 +44,12 @@ export interface WeatherType {
   name: string | number
   timezone: number
   visibility: number
-  clouds: WeatherTypeClouds | object | any
-  coord: WeatherTypeCoord | object
-  main: WeatherTypeMain | object
+  clouds: WeatherTypeClouds
+  coord: WeatherTypeCoord
+  main: WeatherTypeMain
   sys: WeatherTypeSys
   weather: Array<WeatherTypeWeather>
-  wind: WeatherTypeWind | object
+  wind: WeatherTypeWind
 }
+
+type Temp = number | any
