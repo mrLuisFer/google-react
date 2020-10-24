@@ -1,14 +1,5 @@
 import React from "react"
-
-interface WeatherProps {
-  weatherName: string | number | any
-  weatherMain: string | number | any
-  weatherDesc: string | number | any
-  weatherTemp: number | number | any
-  weatherTempMin: number | number | any
-  weatherTempMax: number | number | any
-  weatherRainPorcent: number | string | any
-}
+import { WeatherProps } from "../types"
 
 const Weather: React.FC<WeatherProps> = ({
   weatherName,
@@ -19,7 +10,7 @@ const Weather: React.FC<WeatherProps> = ({
   weatherRainPorcent,
   weatherTempMin,
 }) => (
-  <div className="bg-gray-100 shadow-lg mx-5 mt-5 rounded-md flex justify-between p-4 items-center text-gray-600">
+  <div className="bg-gray-100 shadow-lg mx-5 mt-5 rounded-lg flex justify-between p-4 items-center text-gray-600 hover:bg-gray-200 hover:shadow-xl justify-self-center max-w-4xl">
     <i className="fas fa-cloud text-4xl mr-2 text-gray-700 "></i>
     <div className="flex text-left text-xs content-between font-semibold leading-6">
       <div className="pr-5">

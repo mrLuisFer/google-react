@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const NavBar: React.FC = () => {
   return (
@@ -13,10 +13,10 @@ const NavBar: React.FC = () => {
         <p className="invisible sm:visible sm:cursor-pointer">Gmail</p>
         <p className="invisible sm:visible pl-4 sm:cursor-pointer">Images</p>
         <i className="invisible sm:visible fab fa-buromobelexperte sm:text-2xl sm:px-4 sm:cursor-pointer"></i>
-        <i className="fas fa-user-circle text-3xl pr-5 sm:p-0 sm:cursor-pointer"></i>
+        <i className="fas fa-user-circle text-3xl pr-5 sm:p-0 sm:cursor-pointer "></i>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar

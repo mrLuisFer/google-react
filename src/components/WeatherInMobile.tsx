@@ -1,22 +1,27 @@
-import React, { useCallback, useEffect, useState } from "react"
+import React, { useEffect, useState } from "react"
 import { WeatherType, Temp } from "../types"
 import Weather from "./Weather"
 import { useFetchApi } from "../hooks/useFetchApi"
 
 const WeatherInMobile: React.FC = () => {
   const [weather, setWeather] = useState<WeatherType>()
-  const [handleErr, setHandleErr] = useState(false)
+  const [handleErr, setHandleErr] = useState<Boolean>(false)
 
   const apiKey = process.env.REACT_APP_WEATHER_API_KEY
   const api_url = `https://api.openweathermap.org/data/2.5/weather?q=london&appid=${apiKey}`
 
-  const data = useFetchApi(api_url, handleErr, setHandleErr, setWeather)
+  const urlAndKey = {
+    apiKey: apiKey,
+    api_url: api_url,
+  }
+  const data = useFetchApi(urlAndKey)
 
   useEffect(() => {
     let mounted = true
     if (mounted) {
       data.then((res) => setWeather(res))
     } else {
+      setHandleErr(true)
       return function clenaUp() {
         mounted = false
       }

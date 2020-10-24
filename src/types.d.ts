@@ -53,3 +53,13 @@ export interface WeatherType {
 }
 
 type Temp = number | any
+
+export interface WeatherProps {
+  weatherName: string | number | any
+  weatherMain: string | number | any
+  weatherDesc: string | number | any
+  weatherTemp: number | number | any
+  weatherTempMin: number | number | any
+  weatherTempMax: number | number | any
+  weatherRainPorcent: number | string | any
+}

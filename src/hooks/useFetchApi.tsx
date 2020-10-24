@@ -1,11 +1,11 @@
 // import { useCallback, useEffect } from "react"
 
-export const useFetchApi = async (
-  api_url,
-  handleErr,
-  setHandleErr?,
-  setWeather?
-) => {
+type TuseFetchApi = {
+  api_url: any
+  handleErr?: any
+}
+
+export const useFetchApi = async ({ api_url, handleErr }: TuseFetchApi) => {
   const width: number = document.body.clientWidth
   if (width <= 600 && !handleErr) {
     try {
