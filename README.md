@@ -1,8 +1,8 @@
-# Google Homepage
+# Google Homepage🌟
 
 ![google screenshot](./src/assets/screenshotGoogle.png)
 
-## `About this Project`🌟🌟🌟
+## `About this Project`🌟
 
 This project was made with React with TypeScript and TailwindCss with some custom stuff but following the same model
 
@@ -10,11 +10,11 @@ This project was done following the Mobile First giving small details in each on
 
 `Screens followed`
 
-- 375px
+- 375px✨
 
-- 1024px
+- 1024px✨
 
-## Scripts
+## Scripts🌟
 
 In the project directory, you can run:
 
