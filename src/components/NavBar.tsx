@@ -19,7 +19,7 @@ const NavBar: React.FC = () => {
         <p className="invisible sm:visible pl-4 sm:pl-5 md:pl-6 sm:cursor-pointer hover:text-gray-800 select-none md:text-xs hover:underline">
           <Link to="/images">Images</Link>
         </p>
-        <i className="invisible sm:visible fab fa-buromobelexperte sm:text-2xl sm:px-4 sm:cursor-pointer md:pl-6 hover:text-gray-700 md:text-lg"></i>
+        <i className="invisible sm:visible fab fa-buromobelexperte sm:text-2xl sm:px-4 sm:cursor-pointer md:pl-6 hover:text-gray-700 md:text-2xl"></i>
         <i className="fas fa-user-circle text-3xl md:text-2xl pr-5 sm:p-0 sm:cursor-pointer md:pl-1 hover:text-gray-700"></i>
       </div>
     </div>

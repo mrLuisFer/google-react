@@ -10,6 +10,8 @@ const SearchBar: React.FC = () => {
         autoFocus
         type="text"
         name="search_input"
+        autoComplete="off"
+        autoCorrect="off"
         className="outline-none w-3/4 pr-3 text-sm md:text-base md:w-full "
       />
       <div className="w-auto flex justify-around">

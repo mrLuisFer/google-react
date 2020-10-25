@@ -26,7 +26,7 @@ const HomePage: React.FC = () => {
         <img
           src={google_logo}
           alt="google_logo"
-          className="mx-auto h-12 select-none md:h-20"
+          className="mx-auto h-12 select-none sm:h-20 md:h-24"
         />
         <SearchBar />
         {width < 600 ? <WeatherInMobile /> : <FeelingInDesk />}
