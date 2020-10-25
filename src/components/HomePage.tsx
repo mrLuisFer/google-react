@@ -22,7 +22,7 @@ const HomePage: React.FC = () => {
   return (
     <>
       <NavBar />
-      <div className="max-w-full mt-5 md:mt-20">
+      <div className="max-w-full mt-5 md:mt-24">
         <img
           src={google_logo}
           alt="google_logo"
