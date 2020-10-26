@@ -1,8 +1,8 @@
 // import { useCallback, useEffect } from "react"
 
 type TuseFetchApi = {
-  api_url: any
-  handleErr?: any
+  api_url: string | any
+  handleErr?: boolean | any
 }
 
 export const useFetchApi = async ({ api_url, handleErr }: TuseFetchApi) => {

@@ -6,9 +6,10 @@ import { useFetchApi } from "../hooks/useFetchApi"
 const WeatherInMobile: React.FC = () => {
   const [weather, setWeather] = useState<WeatherType>()
   const [handleErr, setHandleErr] = useState<Boolean>(false)
+  const [city] = useState("london")
 
   const apiKey = process.env.REACT_APP_WEATHER_API_KEY
-  const api_url = `https://api.openweathermap.org/data/2.5/weather?q=london&appid=${apiKey}`
+  const api_url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
 
   const urlAndKey = {
     apiKey: apiKey,
@@ -22,11 +23,11 @@ const WeatherInMobile: React.FC = () => {
       data.then((res) => setWeather(res))
     } else {
       setHandleErr(true)
-      return function clenaUp() {
+      return function cleanUp() {
         mounted = false
       }
     }
-  }, [data])
+  }, [])
 
   if (!handleErr) {
     let temp: Temp = weather?.main.temp
