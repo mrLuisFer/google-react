@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 function App() {
   return (
     <Router>
-      <div className="App m-auto sm:container sm:px-6 pt-2 sm:pt-5 w-screen">
+      <div className="App m-auto sm:container sm:px-5 md:px-4 pt-2 sm:pt-5 w-screen">
         <Switch>
           <Route exact path="/">
             <HomePage />
