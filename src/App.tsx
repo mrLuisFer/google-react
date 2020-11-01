@@ -1,23 +1,18 @@
 import React from "react"
-import HomePage from "./components/HomePage"
+import { HomePage } from "./components/HomePage"
 import About from "./components/About"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import "./App.css"
 
-function App() {
+export const App: React.FC = () => {
   return (
     <Router>
-      <div className="App m-auto sm:container sm:px-5 md:px-4 pt-2 sm:pt-5 w-screen">
+      <main className="App m-auto sm:container sm:px-5 md:px-4 pt-2 sm:pt-5 w-screen">
         <Switch>
-          <Route exact path="/">
-            <HomePage />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
+          <Route exact path="/" component={HomePage}></Route>
+          <Route exact path="/about" component={About}></Route>
         </Switch>
-      </div>
+      </main>
     </Router>
   )
 }
-
-export default App

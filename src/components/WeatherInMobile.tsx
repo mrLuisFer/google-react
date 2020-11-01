@@ -27,7 +27,7 @@ const WeatherInMobile: React.FC = () => {
         mounted = false
       }
     }
-  }, [])
+  }, [data])
 
   if (!handleErr) {
     let temp: Temp = weather?.main.temp

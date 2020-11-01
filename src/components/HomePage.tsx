@@ -6,7 +6,7 @@ import NavBar from "./NavBar"
 import WeatherInMobile from "./WeatherInMobile"
 import Footer from "./Footer"
 
-const HomePage: React.FC = () => {
+export const HomePage: React.FC = () => {
   const [width, setWidth] = useState<Number>(0)
 
   useEffect(() => {
@@ -35,5 +35,3 @@ const HomePage: React.FC = () => {
     </>
   )
 }
-
-export default HomePage
