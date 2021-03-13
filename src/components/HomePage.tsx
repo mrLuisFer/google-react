@@ -3,7 +3,6 @@ import google_logo from "../assets/Google_logo.svg"
 import FeelingInDesk from "./FeelingInDesk"
 import SearchBar from "./SearchBar"
 import NavBar from "./NavBar"
-import WeatherInMobile from "./WeatherInMobile"
 import Footer from "./Footer"
 
 export const HomePage: React.FC = () => {
@@ -29,7 +28,7 @@ export const HomePage: React.FC = () => {
           className="mx-auto h-12 select-none sm:h-20 md:h-24"
         />
         <SearchBar />
-        {width < 600 ? <WeatherInMobile /> : <FeelingInDesk />}
+        <FeelingInDesk />
         {width > 800 ? <Footer /> : ""}
       </div>
     </>

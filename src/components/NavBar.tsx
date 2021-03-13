@@ -5,7 +5,7 @@ const NavBar: React.FC = () => {
   return (
     <div className="flex justify-between content-center items-center text-gray-600">
       <div className="flex">
-        <span className="invisible sm:visible sm:cursor-pointer hover:text-gray-800 select-none md:text-xs hover:underline">
+        <span className="visible ml-4 md:ml-0 sm:cursor-pointer hover:text-gray-800 select-none md:text-xs hover:underline">
           <Link to="/about">About</Link>
         </span>
         <span className="invisible sm:visible pl-3 sm:pl-4 md:pl-6 sm:cursor-pointer hover:text-gray-800 select-none md:text-xs hover:underline">
