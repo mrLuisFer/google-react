@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <div className="flex">
           <p className="pr-5 cursor-pointer select-none leading-6 hover:underline">
             <a
-              href="https://ads.google.com/intl/es-419_mx/h/?omesubid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2m--ahpm-0000000041-0000000001&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"
+              href="https://ads.google.com/intl/es-419_mx/getstarted/?subid=mx-es-ha-awa-bk-c-cor!o3~CjwKCAjw64eJBhAGEiwABr9o2JL1fD_lak-i_sGGmM9vhE2W9AsaNaRUVsn7O0Z9yCvAJB9kfqqW6RoC2jQQAvD_BwE~78045488589~kwd-94527731~6518825888~435570599485&gclsrc=ds&gclsrc=ds"
               target="_blank"
               rel="noopener noreferrer"
             >
