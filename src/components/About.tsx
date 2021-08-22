@@ -1,5 +1,5 @@
-import React from "react"
-import { Link } from "react-router-dom"
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 const About: React.FC = () => {
   return (
@@ -10,34 +10,28 @@ const About: React.FC = () => {
       <br />
       <p className="text-base font-normal leading-5 tracking-wide text-gray-700">
         This is a <span className="text-gray-900">Google </span>
-        screen project when searching, it was made with modern technologies
-        like: <br />
+        screen project when searching, it was made with modern technologies like: <br />
         <span className="text-gray-800">
           <span className="pl-3">
-            <i className="fas fa-caret-right"></i>{" "}
-            <i className="fab fa-react"></i> React{" "}
+            <i className="fas fa-caret-right"></i> <i className="fab fa-react"></i> React{' '}
           </span>
           <br />
           <span className="pl-3">
-            <i className="fas fa-caret-right"></i>{" "}
-            <i className="far fa-file-code"></i> TypeScript{" "}
+            <i className="fas fa-caret-right"></i> <i className="far fa-file-code"></i> TypeScript{' '}
           </span>
           <br />
           <span className="pl-3">
-            <i className="fas fa-caret-right"></i>{" "}
-            <i className="fas fa-file-code"></i> TailwindCss{" "}
+            <i className="fas fa-caret-right"></i> <i className="fas fa-file-code"></i> TailwindCss{' '}
           </span>
           <br />
         </span>
         <br />
         <br />
-        It was also created by making use of Mobile First since TailwindCss
-        helps a lot with that
+        It was also created by making use of Mobile First since TailwindCss helps a lot with that
         <br />
         <br />
-        If you like the project you can follow me on my social networks where I
-        will place future projects with the progress of my learning put into
-        practice
+        If you like the project you can follow me on my social networks where I will place future
+        projects with the progress of my learning put into practice
         <br />
         <br />
       </p>

@@ -6,7 +6,7 @@ module.exports = {
   purge: [],
   theme: {
     fontFamily: {
-      body: ["Open Sans", "sans-serif"],
+      body: ['Open Sans', 'sans-serif'],
     },
     container: {
       center: true,
