@@ -1,9 +1,14 @@
 import React from 'react'
 import { searchesList, TSearchesList } from './searchesList'
 
-export default function GoogleSearches() {
+export default function GoogleSearches({ showGoogleSearches }: { showGoogleSearches: Boolean }) {
   return (
-    <section className="absolute bg-white z-10 w-full h-40 rounded-2xl border-gray-200 border-2 shadow-sm top-9 flex flex-col">
+    <section
+      className={`absolute bg-white z-10 min-w-full h-40 border border-t-0 shadow-sm top-9 flex flex-col 
+        ${showGoogleSearches ? 'rounded-none rounded-bl-3xl rounded-br-3xl' : 'rounded-3xl'}
+      `}
+    >
+      <div className="my-2 bg-gray-500 h-1 w-11/12 block mx-auto rounded-full opacity-30"></div>
       {searchesList?.map((singleSearch: TSearchesList) => (
         <div
           key={singleSearch.text}
