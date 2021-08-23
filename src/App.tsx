@@ -2,10 +2,9 @@ import React from 'react'
 import { HomePage } from './components/HomePage'
 import About from './components/About'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import './App.css'
 
 // @App
-export const App: React.FC = () => {
+const App: React.FC = () => {
   return (
     <Router>
       <main className="App m-auto sm:container sm:px-5 md:px-4 pt-2 sm:pt-5 w-screen">
@@ -17,3 +16,5 @@ export const App: React.FC = () => {
     </Router>
   )
 }
+
+export default App
