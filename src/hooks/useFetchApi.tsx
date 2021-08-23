@@ -1,5 +1,3 @@
-// import { useCallback, useEffect } from "react"
-
 type TuseFetchApi = {
   api_url: string | any
   handleErr?: boolean | any
@@ -13,7 +11,7 @@ export const useFetchApi = async ({ api_url, handleErr }: TuseFetchApi) => {
       const data = await res.json()
       return data
     } catch {
-      console.log("Api error")
+      console.log('Api error')
       return true
     }
   }

@@ -1,12 +1,11 @@
 import React from 'react'
-import google_logo from "../assets/Google_logo.svg"
-import FeelingInDesk from "./FeelingInDesk"
-import SearchBar from "./SearchBar"
-import NavBar from "./NavBar"
-import Footer from "./Footer"
+import google_logo from '../assets/Google_logo.svg'
+import FeelingInDesk from './FeelingInDesk'
+import SearchBar from './SearchBar'
+import NavBar from './NavBar'
+import Footer from './Footer'
 
 export const HomePage: React.FC = () => {
-
   return (
     <>
       <NavBar />
