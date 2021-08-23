@@ -15,3 +15,8 @@ html {
 .App {
   background: #fff;
 }
+
+.outline-block:hover {
+  @apply shadow-lg;
+  outline: 1px solid gray;
+}
