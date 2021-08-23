@@ -4,7 +4,7 @@ import FooterLink from './FooterLink'
 const Footer: React.FC = () => {
   return (
     <footer className="absolute bottom-0 left-0 hidden w-full px-5 text-xs text-gray-700 bg-gray-100 border-t-2 lg:block">
-      <p className="select-none leading-8 cursor-text">Some Country</p>
+      <p className="select-none leading-8 cursor-text opacity-75">Some Country</p>
       <hr />
       <div className="flex items-center content-center justify-between py-2">
         <div className="flex">
