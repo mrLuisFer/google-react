@@ -3,13 +3,11 @@ import GoogleSearches from './GoogleSearches'
 
 const SearchBar: React.FC = () => {
   const [showGoogleSearches, setShowGoogleSearches] = useState(false)
-  const handleFocusInput = (event: FocusEvent | any) => {
-    console.log(event)
+  const handleFocusInput = () => {
     setShowGoogleSearches(true)
   }
 
-  const handleOnBlurEvent = (event: FocusEvent | any) => {
-    console.log(event)
+  const handleOnBlurEvent = () => {
     setShowGoogleSearches(false)
   }
 
@@ -21,11 +19,10 @@ const SearchBar: React.FC = () => {
           : 'rounded-3xl border border-gray-400 md:hover:border-gray-500'
       }`}
     >
-      <label htmlFor="search_input">
-        <i
-          className="pr-2 text-xl text-gray-500 cursor-pointer select-none fas fa-search md:pr-3 md:text-lg"
-          title="Search"
-        ></i>
+      <label htmlFor="search_input" className="flex items-center">
+        <span className="material-icons-outlined pr-2 text-xl text-gray-500 cursor-default select-none md:pr-3 md:text-lg">
+          search
+        </span>
       </label>
       <input
         autoFocus
@@ -35,14 +32,16 @@ const SearchBar: React.FC = () => {
         autoComplete="off"
         autoCorrect="off"
         className="w-3/4 pr-3 text-sm outline-none md:text-base md:w-full"
-        onFocus={(event) => handleFocusInput(event)}
-        onBlur={(event) => handleOnBlurEvent(event)}
+        onFocus={handleFocusInput}
+        onBlur={handleOnBlurEvent}
       />
       <div className="flex justify-around w-auto">
-        <i
-          className="pr-6 text-xl text-gray-600 cursor-pointer select-none fas fa-microphone"
+        <span
+          className="material-icons-outlined pr-4 text-xl text-gray-600 hover:text-gray-700 cursor-pointer select-none"
           title="Active Voice"
-        ></i>
+        >
+          mic
+        </span>
         <i
           className="text-xl text-gray-600 cursor-pointer select-none fas fa-camera md:hidden"
           title="Active Camera"
