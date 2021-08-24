@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import DarkModeToggle from './DarkModeToggle'
 
 const NavBar: React.FC = () => {
   return (
@@ -18,7 +19,9 @@ const NavBar: React.FC = () => {
           </a>
         </p>
       </div>
+
       <div className="flex items-center text-gray-600">
+        <DarkModeToggle />
         <p className="invisible select-none sm:visible sm:cursor-pointer hover:text-gray-800 md:text-xs transition duration-150">
           <a href="https://gmail.com" target="_blank" rel="noopener noreferrer">
             Gmail
