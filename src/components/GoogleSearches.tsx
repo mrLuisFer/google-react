@@ -1,4 +1,5 @@
 import React from 'react'
+import SearcherLineSeparate from './SearcherLineSeparate'
 import { searchesList, TSearchesList } from './searchesList'
 
 export default function GoogleSearches({ showGoogleSearches }: { showGoogleSearches: Boolean }) {
@@ -8,7 +9,7 @@ export default function GoogleSearches({ showGoogleSearches }: { showGoogleSearc
         ${showGoogleSearches ? 'rounded-none rounded-bl-3xl rounded-br-3xl' : 'rounded-3xl'}
       `}
     >
-      <div className="my-2 bg-gray-500 h-1 w-11/12 block mx-auto rounded-full opacity-30"></div>
+      <SearcherLineSeparate />
       {searchesList?.map((singleSearch: TSearchesList) => (
         <div
           key={singleSearch.text}

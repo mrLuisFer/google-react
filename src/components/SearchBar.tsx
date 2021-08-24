@@ -22,7 +22,10 @@ const SearchBar: React.FC = () => {
       }`}
     >
       <label htmlFor="search_input">
-        <i className="pr-2 text-xl text-gray-500 cursor-pointer select-none fas fa-search md:pr-3 md:text-lg"></i>
+        <i
+          className="pr-2 text-xl text-gray-500 cursor-pointer select-none fas fa-search md:pr-3 md:text-lg"
+          title="Search"
+        ></i>
       </label>
       <input
         autoFocus
@@ -36,8 +39,14 @@ const SearchBar: React.FC = () => {
         onBlur={(event) => handleOnBlurEvent(event)}
       />
       <div className="flex justify-around w-auto">
-        <i className="pr-6 text-xl text-gray-600 cursor-pointer select-none fas fa-microphone"></i>
-        <i className="text-xl text-gray-600 cursor-pointer select-none fas fa-camera md:hidden"></i>
+        <i
+          className="pr-6 text-xl text-gray-600 cursor-pointer select-none fas fa-microphone"
+          title="Active Voice"
+        ></i>
+        <i
+          className="text-xl text-gray-600 cursor-pointer select-none fas fa-camera md:hidden"
+          title="Active Camera"
+        ></i>
       </div>
       {showGoogleSearches && <GoogleSearches showGoogleSearches={showGoogleSearches} />}
     </div>

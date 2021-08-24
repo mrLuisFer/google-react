@@ -14,7 +14,8 @@ export const HomePage: React.FC = () => {
           src={google_logo}
           alt="google_logo"
           draggable="false"
-          className="h-12 mx-auto select-none sm:h-20 md:h-24"
+          className="h-12 mx-auto select-none sm:h-20 md:h-24 select-none"
+          title="Google"
         />
         <SearchBar />
         <FeelingInDesk />
