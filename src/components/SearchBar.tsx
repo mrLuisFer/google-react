@@ -20,7 +20,7 @@ const SearchBar: React.FC = () => {
       }`}
     >
       <label htmlFor="search_input" className="flex items-center">
-        <span className="material-icons-outlined pr-2 text-xl text-gray-500 cursor-default select-none md:pr-3 md:text-lg">
+        <span className="material-icons-outlined pr-2 text-2xl text-gray-500 cursor-default select-none md:pr-3 md:text-lg">
           search
         </span>
       </label>
