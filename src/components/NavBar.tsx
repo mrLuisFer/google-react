@@ -32,10 +32,13 @@ const NavBar: React.FC = () => {
             Images
           </a>
         </p>
-        <i
-          className="invisible sm:visible fab fa-buromobelexperte sm:text-2xl sm:px-4 sm:cursor-pointer md:pl-6 hover:text-gray-700 md:text-2xl transition duration-150"
+
+        <span
+          className="material-icons-outlined invisible sm:visible sm:text-2xl sm:px-4 sm:cursor-pointer md:pl-6 hover:text-gray-700 md:text-2xl transition duration-150 lg:text-3xl select-none"
           title="Google Apps"
-        ></i>
+        >
+          apps
+        </span>
         <i
           className="pr-5 text-3xl fas fa-user-circle md:text-2xl sm:p-0 sm:cursor-pointer md:pl-1 hover:text-gray-700 transition duration-150"
           title="Google Account"
